@@ -14,26 +14,38 @@
     <link rel="stylesheet" href="css/common-styles.css">
     <link rel="stylesheet" href="css/main-page.css">
     <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/main__page/header.css">
 </head>
 
 <body>
     <div class="custom-cursor"></div>
     <div class="container">
         <div class="header">
-            <div class="header__logo">
-                <img src="img/logo.png" alt="logo-img">
+            <div class="header__top">
+                <div class="header__logo">
+                    <img src="img/logo.png" alt="logo-img">
+                </div>
+                <button class="burger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
+
             <nav class="header__nav" aria-label="Main navigation">
                 <a href="" class="header__link">Why it's good</a>
                 <a href="" class="header__link">How it works</a>
                 <a href="" class="header__link">Templates</a>
                 <a href="" class="header__link">Pricing</a>
                 <a href="" class="header__link">FAQ</a>
+                <div class="header__action">
+                    <button class="header__button">Get Started</button>
+                </div>
             </nav>
-            <div class="header__action">
-                <button class="header__button">Get Started</button>
-            </div>
         </div>
+        <div class="menu-overlay"></div>
+
+
         <div class="customize__webflow">
             <h1 class="customize__webflow__title">we customize your <br> webflow template <br> in minutes</h1>
         </div>
@@ -264,5 +276,6 @@
 <script src="js/cards.js"></script>
 <script src="js/cursor.js"></script>
 <script src="js/black-container-scroll.js"></script>
+<script src="js/header-burger-menu.js"></script>
 
 </html>
